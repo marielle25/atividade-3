@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Avaliação recebida!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <div class="container">
+    <ul>
+    
+      <li>Questão 1 - shakespeare(<a href="{{url_for('shakespeare', idioma='en')}}">en</a> | <a href="{{url_for('shakespeare', idioma='pt')}}">pt</a> | <a href="{{url_for('shakespeare', idioma='outro')}}">outro</a>)</a></li>
+      <li>Questão 2 - dirigir<a href="{{url_for('permissaoparadirigir')}}">(ver questão)</a></li>
+      <li>Questão 3 - itens<a href="{{url_for('itens', n=5)}}">(ver questão)</a></li>
+      <li>Questão 4 - criar questões<a href="{{url_for('criarquestoes', n=8)}}">(ver questão)</a></li>
+      <li>Questão 5 - fazer avaliação<a href="{{url_for('fazeravaliacao')}}">(ver questão)</a></li>
+      <li>Questão 6 - avaliações<a href="{{url_for('avaliacoes')}}">(ver questão)</a></li>
+      
+    </ul>
+ </div>
+  
+</html>

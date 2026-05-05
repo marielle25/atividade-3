@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8"> 
+  <title>Avaliação dos Clientes</title>
+  <style>
+      .avaliacao-container { border: 1px solid #ecc; padding: 15px; margin-bottom: 10px; border-radius: 5px;}
+  </style>
+</head>
+<body>
+    <h1>Avaliação</h1>
+
+
+    <!-- loop do jinja2 para percorrer o dicionário/lista de avaliações -->
+     {% for av in avaliacoes_data %}
+     <div class="avaliacao-container">
+         <p class="nome-cliente">Clientes: {{ av.nome }}</p>
+         <p class="nota">nota: {{ av.nota }}</p>
+         <p class="comentario">"{{  av.comentario }}"</p>
+     </div>
+     {% endfor %}
+</html>
